@@ -45,9 +45,8 @@ For a detailed guide on creating and running your first Expo app, refer to the [
 - **Navigation:** Seamless navigation between different screens using React Navigation.
 
 
-[Watch Demo](https://github.com/username/repository/blob/main/demo.mp4)
+[Watch App Demo](https://github.com/user-attachments/assets/bdba6b51-f54b-43f4-94e0-2b9b182228f2)
 
-https://github.com/user-attachments/assets/bdba6b51-f54b-43f4-94e0-2b9b182228f2
 ![WhatsApp Image 2025-03-12 at 12 37 42_8fdda743](https://github.com/user-attachments/assets/5d856905-735d-42fe-b9f6-c6e4e4830bb9)
 ![WhatsApp Image 2025-03-12 at 12 37 42_7e63f35b](https://github.com/user-attachments/assets/af882bce-fc88-4eb4-a9a8-fc69abef7edf)
 ![WhatsApp Image 2025-03-12 at 12 37 42_9e13ea28](https://github.com/user-attachments/assets/1a881fb1-3b28-45dd-8a7c-73a2119b95cd)
