@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import LaunchesScreen from "./screens/LaunchesScreen";
+import LaunchDetailsScreen from "./screens/LaunchDetailsScreen";
+import FavoritesScreen from "./screens/FavoritesScreen"; // Add Favorites Screen
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ 
+        headerStyle: { backgroundColor: '#000' },  // Updated color
+        headerTintColor: '#fff',
+        cardStyle: { backgroundColor: '#000' }
+      }}>
+        <Stack.Screen 
+          name="Launches" 
+          component={LaunchesScreen} 
+          options={{ title: "SpaceX" }}
+        />
+        <Stack.Screen 
+          name="LaunchDetails" 
+          component={LaunchDetailsScreen} 
+          options={{ title: "Launch Details" }}
+        />
+        <Stack.Screen 
+          name="Favorites" 
+          component={FavoritesScreen} 
+          options={{ title: "Favorites" }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
